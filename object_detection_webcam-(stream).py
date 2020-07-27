@@ -1,6 +1,3 @@
-# author: Arun Ponnusamy
-# website: https://www.arunponnusamy.com
-
 # object detection webcam example using tiny yolo
 # usage: python object_detection_webcam_yolov3_tiny.py
 
@@ -36,12 +33,13 @@ while webcam.isOpened():
 
     # display output
     cv2.imshow("Real-time object detection", out)
+    
     #need to somehow stream this to a ip address
-
+        
     # press "Q" to stop
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
     
 # release resources
 webcam.release()
-cv2.destroyAllWindows()        
+cv2.destroyAllWindows()

@@ -32,9 +32,10 @@ while webcam.isOpened():
     out = draw_bbox(frame, bbox, label, conf, write_conf=True)
 
     # display output
-    cv2.imshow("Real-time object detection", out)
+    cv2.imshow("Real-time object detection", out) 
     
     #need to somehow stream this to a ip address
+    
         
     # press "Q" to stop
     if cv2.waitKey(1) & 0xFF == ord('q'):

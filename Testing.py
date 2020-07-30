@@ -2,9 +2,16 @@
 import cvlib as cv
 from cvlib.object_detection import draw_bbox
 import cv2
+import os
+import keyboard
 
 # open webcam
 webcam = cv2.VideoCapture(0)
+
+def Switch_To_HUD():
+    os.system() #open HUD script
+    print('opening Main_HUD') #open HUD script
+    exit() #close object detection script
 
 if not webcam.isOpened():
     print("Could not open webcam")
@@ -34,14 +41,16 @@ while webcam.isOpened():
     out = draw_bbox(frame, bbox, label, conf, write_conf=True)
 
     # display output
-    cv2.imshow("Real-time object detection", out) 
+    cv2.imshow("Real-time_object_detection", out) 
     
     #need to somehow stream this to a ip address
     
         
     # press "Q" to stop
     if cv2.waitKey(1) & 0xFF == ord('q'):
-        break
+        Switch_To_HUD()
+        #break
+
     
 # release resources
 webcam.release()

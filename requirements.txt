@@ -1,3 +1,4 @@
 cvlib
 opencv-python
 tensorflow
+keyboard

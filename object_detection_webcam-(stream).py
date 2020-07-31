@@ -1,6 +1,3 @@
-# object detection webcam example using tiny yolo
-# usage: python object_detection_webcam_yolov3_tiny.py
-
 # import necessary packages
 import cvlib as cv
 from cvlib.object_detection import draw_bbox

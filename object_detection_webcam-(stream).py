@@ -22,7 +22,8 @@ while webcam.isOpened():
 
     # apply object detection
     bbox, label, conf = cv.detect_common_objects(frame, confidence=0.25, model='yolov3-tiny')
-
+    
+    #print the boxes and labels around the objects
     print(bbox, label, conf)
 
 

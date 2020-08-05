@@ -26,4 +26,5 @@ in future this and the HUD repo will be intergrated together, with the virtual a
 - ```pip install -r requirements.txt```
 - you will need to create a file called ```.env``` the format of this file is as follows:
 
+#.env
 HUD_PATH = \\path\\to\\the\\main-HUD\\file\\here\\\main-HUD.py
